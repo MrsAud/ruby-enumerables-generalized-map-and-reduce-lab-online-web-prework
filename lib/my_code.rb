@@ -20,6 +20,7 @@ def reduce(array, value = nil)
    counter = 1
  end
   while counter < array.length do
+    # math stuff is happening in the block given by specs
     total = yield(total, array[counter])
     counter += 1
   end
