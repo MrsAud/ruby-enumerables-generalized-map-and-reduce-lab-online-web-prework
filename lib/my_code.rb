@@ -10,8 +10,8 @@ def map(array)
   new_array
 end
 
+
 def reduce(array, value = nil)
- # I need to ask for help. I don't understand how I got the solution before. I probably peeked.
  if value
    total = value
    counter = 0
@@ -20,7 +20,7 @@ def reduce(array, value = nil)
    counter = 1
  end
   while counter < array.length do
-    total += yield(total, array[counter])
+    total = yield(total, array[counter])
     counter += 1
   end
 
